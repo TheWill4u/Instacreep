@@ -1,0 +1,21 @@
+{
+  "name": "Instacreep",
+  "version": "1.0",
+  "author": "Mr.Bubbles",
+  "icons":{
+    "16": "/nhwm16.png",
+    "32":"./nhwm32.png",
+    "48":"./nhwm48.png",
+    "128":"./nhwm128.png"
+  },
+  "description": "Look @ instagram w/o logging in. Original functionality",
+  "manifest_version": 2,
+  "content_scripts":[{
+     "matches":["*://*.instagram.com/*"],
+     "js":["./removeModal.js"],
+     "css":["./remove.css"]
+  }],
+  "page_action": {},
+  "incognito": "split"
+  
+}
