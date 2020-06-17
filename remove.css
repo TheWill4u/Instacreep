@@ -1,3 +1,7 @@
 body{
     overflow: scroll !important;
 }
+
+div[role ~= "presentation"]{
+	display: none;
+}
